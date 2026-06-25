@@ -189,26 +189,24 @@ main { padding: 3rem 3rem 6rem; max-width: 740px; }
   <main>
     <div class="page-title">Research</div>
 
-    <div class="eyebrow">Research overview</div>
-    <p class="bio">My research focuses on developing machine learning methods for intelligent human–AI interaction, with an emphasis on wearable sensing, computer vision, multimodal learning, and adaptive intelligent systems. I investigate how learning algorithms can model human movement and intent from multimodal data to enable robust, personalized, and reliable interaction between humans and intelligent devices in real-world environments.</p>
-    <p class="bio" style="margin-bottom:1.5rem;">My current research uses prosthetic hand control as an application domain, while addressing broader machine learning problems including continuous motion estimation, multimodal representation learning, adaptive learning, and human-centered AI.</p>
+    <div class="eyebrow">Dissertation overview</div>
+    <p class="bio" style="margin-bottom:1.5rem;">My PhD dissertation addresses the gap between lab-grade prosthetic control and real-world usability. Current commercial systems require users to perform repetitive calibration routines and still fail to adapt to fatigue, electrode shift, or changing contexts. I am building a framework that is <strong>continuous, adaptive, and user-specific</strong> — learned from the user's own movement, not pre-programmed.</p>
 
     <div class="r-grid">
       <div class="r-card">
-        <h3>Continuous Human Motion Estimation</h3>
-        <p>Developing machine learning models that estimate continuous hand and finger kinematics from wearable biosignals and visual information, moving beyond discrete gesture classification toward natural, dexterous human–AI interaction.</p>
+        <div class="r-label">Aim 01</div>
+        <h3>Continuous finger movement estimation</h3>
+        <p>Predicting individual finger joint angles in real time from sEMG and FMG signals — moving beyond discrete gesture classification toward dexterous, proportional control of each finger.</p>
       </div>
       <div class="r-card">
-        <h3>Grasp Intent and Force Estimation</h3>
-        <p>Learning continuous grasp force and manipulation intent from multimodal sensor data to enable adaptive, compliant interaction between humans and intelligent robotic systems.</p>
+        <div class="r-label">Aim 02</div>
+        <h3>Grasp-force prediction</h3>
+        <p>Estimating grip force intent from biosignals to enable compliant, safe grasping — a critical requirement for daily-use prosthetics that has received insufficient attention in the literature.</p>
       </div>
       <div class="r-card full">
-        <h3>Multimodal Machine Learning</h3>
-        <p>Designing learning algorithms that integrate wearable biosignals, computer vision, and contextual information to improve robustness, generalization, and adaptability across users and real-world environments.</p>
-      </div>
-      <div class="r-card full">
-        <h3>Robust Learning for Real-World Deployment</h3>
-        <p>Investigating how data collection strategies, training protocols, and real-world variability influence model robustness and generalization. This includes studying the impact of user variability, sensor placement, and environmental conditions to develop machine learning systems that remain reliable beyond controlled laboratory settings.</p>
+        <div class="r-label">Core contribution</div>
+        <h3>Imitation learning from the contralateral limb</h3>
+        <p>Using camera-based pose tracking of the intact hand as a continuous, high-resolution supervision signal. Rather than asking users to perform training protocols, the system observes what the user naturally does with their healthy hand and transfers that pattern to the prosthetic controller. This approach reduces calibration burden, improves personalization, and enables ongoing adaptation — bridging the gap between laboratory performance and real-world deployment.</p>
       </div>
     </div>
 
